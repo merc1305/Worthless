@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Worthless world!")
+        Text("Hello dear Friend!  \nThe only reason of this app is to let you make the author of this app a bit richer, did you know? \nEnjoy living with this now!")
+            .multilineTextAlignment(.center)
             .padding()
     }
 }
