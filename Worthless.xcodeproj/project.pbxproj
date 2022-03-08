@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E09E72927D6805700E6CCDE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E09E72827D6805700E6CCDE /* StoreKit.framework */; };
+		3E09E72B27D680B400E6CCDE /* InAppsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09E72A27D680B400E6CCDE /* InAppsManager.swift */; };
+		3E09EA2D27D6312100C11815 /* payMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09EA2C27D6312100C11815 /* payMe.swift */; };
+		3E09EA2F27D631F900C11815 /* whalePayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09EA2E27D631F900C11815 /* whalePayers.swift */; };
+		3E09EA3127D6353000C11815 /* MailMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09EA3027D6353000C11815 /* MailMe.swift */; };
 		3EDD90B025D2B2D100412D50 /* WorthlessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD90AF25D2B2D100412D50 /* WorthlessApp.swift */; };
 		3EDD90B225D2B2D100412D50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDD90B125D2B2D100412D50 /* ContentView.swift */; };
 		3EDD90B425D2B2D200412D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EDD90B325D2B2D200412D50 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E09E72827D6805700E6CCDE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3E09E72A27D680B400E6CCDE /* InAppsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppsManager.swift; sourceTree = "<group>"; };
+		3E09EA2C27D6312100C11815 /* payMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payMe.swift; sourceTree = "<group>"; };
+		3E09EA2E27D631F900C11815 /* whalePayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whalePayers.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		3E09EA3027D6353000C11815 /* MailMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailMe.swift; sourceTree = "<group>"; };
 		3EDD90AC25D2B2D100412D50 /* Worthless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worthless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDD90AF25D2B2D100412D50 /* WorthlessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorthlessApp.swift; sourceTree = "<group>"; };
 		3EDD90B125D2B2D100412D50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E09E72927D6805700E6CCDE /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E09E72727D6805700E6CCDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E09E72827D6805700E6CCDE /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3EDD90A325D2B2D100412D50 = {
 			isa = PBXGroup;
 			children = (
 				3EDD90AE25D2B2D100412D50 /* Worthless */,
 				3EDD90AD25D2B2D100412D50 /* Products */,
+				3E09E72727D6805700E6CCDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +72,12 @@
 		3EDD90AE25D2B2D100412D50 /* Worthless */ = {
 			isa = PBXGroup;
 			children = (
+				3E09E72A27D680B400E6CCDE /* InAppsManager.swift */,
 				3EDD90AF25D2B2D100412D50 /* WorthlessApp.swift */,
 				3EDD90B125D2B2D100412D50 /* ContentView.swift */,
+				3E09EA2C27D6312100C11815 /* payMe.swift */,
+				3E09EA2E27D631F900C11815 /* whalePayers.swift */,
+				3E09EA3027D6353000C11815 /* MailMe.swift */,
 				3EDD90B325D2B2D200412D50 /* Assets.xcassets */,
 				3EDD90B825D2B2D200412D50 /* Info.plist */,
 				3EDD90B525D2B2D200412D50 /* Preview Content */,
@@ -138,6 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E09EA2D27D6312100C11815 /* payMe.swift in Sources */,
+				3E09EA3127D6353000C11815 /* MailMe.swift in Sources */,
+				3E09E72B27D680B400E6CCDE /* InAppsManager.swift in Sources */,
+				3E09EA2F27D631F900C11815 /* whalePayers.swift in Sources */,
 				3EDD90B225D2B2D100412D50 /* ContentView.swift in Sources */,
 				3EDD90B025D2B2D100412D50 /* WorthlessApp.swift in Sources */,
 			);
@@ -197,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Worthless/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WCF5726LU;
@@ -279,6 +308,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yauheni.info.Worthless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Worthless/Preview Content\"";
 				DEVELOPMENT_TEAM = 7WCF5726LU;
@@ -301,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yauheni.info.Worthless;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
