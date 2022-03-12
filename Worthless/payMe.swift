@@ -62,7 +62,7 @@ struct payMe: View {
                         .font(.system(size: 30))
                     
                 }
-                Spacer()
+//                Spacer()
                 
             }
         }

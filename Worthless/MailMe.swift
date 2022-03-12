@@ -54,7 +54,6 @@ struct MailView: UIViewControllerRepresentable {
 
     func updateUIViewController(_ uiViewController: MFMailComposeViewController,
                                 context: UIViewControllerRepresentableContext<MailView>) {
-
     }
 }
 
@@ -64,26 +63,6 @@ struct MailMe: View {
     @State var isShowingMailView = false
     
     var body: some View {
-//        VStack {
-//            Text("Ок, давай поговорим, как насчет электронной почты? Тапай на кнопку и напиши всё, что обо мне думаешь, не стесняйся!")
-//                .multilineTextAlignment(.leading)
-//                .padding()
-//
-//            if MFMailComposeViewController.canSendMail() {
-//                           Button("Написать Жене") {
-//                               self.isShowingMailView.toggle()
-//                           }
-//                       } else {
-//                           Text("Упс! Похоже это устройство не может отправлять письма, попробуй написать напрямую на y.shauchenka+wless@gmail.com")
-//                               .multilineTextAlignment(.center)
-//                               .padding()
-//                       }
-//                       if result != nil {
-//                           Text("Result: \(String(describing: result))")
-//                               .lineLimit(nil)
-//                       }
-//        }
-        
         VStack {
             
             Text("Ок, давай поговорим, как насчет электронной почты? Тапай на кнопку и напиши всё, что обо мне думаешь, не стесняйся!")
@@ -96,6 +75,7 @@ struct MailMe: View {
                 }
             } else {
                 Text("Упс! Похоже это устройство не может отправлять письма, попробуй написать напрямую на y.shauchenka+wless@gmail.com")
+                    .padding()
             }
 //            if result != nil {
 //                Text("Result: \(String(describing: result))")
@@ -105,8 +85,6 @@ struct MailMe: View {
         .sheet(isPresented: $isShowingMailView) {
             MailView(isShowing: self.$isShowingMailView, result: self.$result)
         }
-        
-        
     }
 }
 
