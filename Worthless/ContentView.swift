@@ -19,6 +19,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.leading)
                         .padding()
                     
+                    
                     NavigationLink(destination: payMe(inAppsManager: inAppsManager)) {
                         Text("Просто заткнись и возьми мои деньги")
                     }
@@ -32,6 +33,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

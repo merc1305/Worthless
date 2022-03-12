@@ -19,15 +19,16 @@ struct whalePayers: View {
                     .font(.system(size: 140))
                     .padding(.top, -70.0)
                 
-                
                 Spacer()
                 
                 Text("Киты - это такие пользователи, которые платят сильно больше среднего чека. В основном они это делают просто потому, что могут. \n\nДля справки: максимальный разрешенный платеж на сегодня через Apple - это 1000-1200 usd в зависимости от региона пользователя, причем разработчик получит максимум 850 usd")
-                    .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                    .fixedSize(horizontal: false, vertical: true)
                 
                 Spacer()
+                    
                 
-
                 List(inAppsManager.myWhaleProducts, id: \.self) { product in
                     HStack {
                         VStack(alignment: .leading) {
@@ -50,12 +51,14 @@ struct whalePayers: View {
                         }
                     }
                 }
+                
+                Spacer()
                     
                 NavigationLink(destination: MailMe()) {
                     Text("Пожалуй я хочу узнать побольше \n перед покупкой.  Может \n сначала поговорим?")
                         .multilineTextAlignment(.center)
                 }
-                Spacer()
+//                Spacer()
             }
         }
 //    }
