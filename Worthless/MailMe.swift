@@ -48,7 +48,7 @@ struct MailView: UIViewControllerRepresentable {
         vc.mailComposeDelegate = context.coordinator
         vc.setToRecipients(["y.shauchenka+wless@gmail.com"])
         vc.setSubject("Решил отправить денег, помоги понять как")
-        vc.setMessageBody("Привет, отличное приложение, однако вот что ещё сюда можно добавить, что бы убедить меня стать китом: \n", isHTML: true)
+        vc.setMessageBody("Привет, отличное приложение, однако вот что ещё сюда можно добавить, что бы убедить меня стать китом: </br></br></br></br></br> Кстати я знаю, что это приложение с открытым исходным кодом и даже уже сходил посмотрел открытые тикеты на https://github.com/merc1305/Worthless/issues", isHTML: true)
         return vc
     }
 
